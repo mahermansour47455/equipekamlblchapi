@@ -1,0 +1,15 @@
+<form>
+    <div >
+    <label>ID Catégorie</label>
+    <input type="text" [(ngModel)]="league.id" name="id" class="form-control w-25">
+    </div>
+    <div>
+    <label>Nom Catégorie</label>
+    <input type="text" [(ngModel)]="league.legue" name="nomCategorie" class="form-control"
+    placeholder="Entrez un nom de catégorie...">
+    </div>
+    <div class="mt-2">
+     <button type="submit" [disabled]="!league.legue" class="btn btn-success"
+    (click)="saveCategorie()" >Ajouter</button>
+    </div>
+    </form>
